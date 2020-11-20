@@ -1,3 +1,95 @@
+/*Styling color and fonts of body*/
 body {
   background-color: #d8dfe9;
+  font-family: montserrat, arial, sans-serif;
+}
+
+h1 {
+  font-family: teko, georgia, serif;
+  font-size: 88px;
+  color: #07275e;
+}
+
+h2 {
+  font-family: teko, georgia, serif;
+  font-size: 48px;
+  color: #07275e;
+}
+
+h3 {
+  font-family: teko, georgia, serif;
+  font-size: 32px;
+  color: #07275e;
+}
+
+p {
+  color: #07275e;
+}
+/*Styling color and fonts of body*/
+
+/*Styling header*/
+header img {
+  width: 260px;
+  height: 140px;
+}
+
+.sub-nav a {
+  text-decoration: none;
+  color: #07275e;
+  font-weight: bold;
+}
+
+.sub-nav ul {
+  list-style-type: none;
+  padding: 0px 0px 0px 1250px;
+  position: relative;
+  top: -150px;
+}
+
+.sub-nav li {
+  display: inline;
+  padding: 10px;
+}
+
+.sub-nav a:hover {
+  color: #2373bc;
+}
+
+button {
+  background-color: #07275e;
+  color: white;
+  font-weight: bold;
+  padding: 14px 40px;
+  border-radius: 50px;
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #2373bc;
+}
+
+.main-nav .search {
+  padding: 14px 60px;
+  border-radius: 50px;
+}
+
+.main-nav {
+  background-color: #ea580e;
+}
+/* Styling header */
+
+/* Styling Section images */
+.newArrivals img {
+  width: 500px;
+  height: 500px;
+}
+
+.bestSellers img {
+  width: 500px;
+  height: 500px;
 }

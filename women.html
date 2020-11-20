@@ -2,6 +2,14 @@
 <html>
   <head>
     <title>Rainy Days</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@600;700&display=swap" rel="stylesheet">
+
+    <link href="styles/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -9,7 +17,7 @@
         <img src="images/RainyDays_Logo.png" alt="Logo for Rainy Days">
       </a>
       
-      <nav aria-label="Sub-navigation">
+      <nav class="sub-nav" aria-label="Sub-navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -17,10 +25,10 @@
         </ul>
       </nav>
       
-      <nav aria-label="Main">
+      <nav class="main-nav" aria-label="Main">
         <button><a href="men.html">Men's Jackets</a></button>
         <button><a href="women.html">Women's Jackets</a></button>
-        <input type="text" placeholder="Search..">
+        <input type="text" class="search" placeholder="Search..">
         <button><a href="cart.html">View Cart</a></button>
       </nav>
     </header>
@@ -28,10 +36,74 @@
     <main>
       <img src="images/womens-jackets.jpg" alt="Women's Jackets page image">
       <h1>Women's Jackets</h1>
+      <section class="hikingWomen">
+        <img src="images/hiking-women.jpg" alt="Section image for hiking jackets women">
+        <h2>Women's Hiking Jackets</h2>
+        <article class="extremeWomen">
+          <a href="product.html">
+          <img src="images/jacket-extreme-women.jpg" alt="Image of jacket extreme for women">
+          </a>
+          <h3>Jacket Extreme</h3>
+          <p>Suitable for Hiking</p>
+          <p>Sizes</p>
+          <p>S</p>
+          <p>M</p>
+          <p>L</p>
+          <p>XL</p>
+          <p>2225-,</p>
+          <button>Add to Cart</button>
+          <button><a href="checkout.html">Checkout</a></button>
+        </article>
+        <article class="activeWomen">
+          <img src="images/jacket-active-women.jpg" alt="Image of jacket active for women">
+          <h3>Jacket Active</h3>
+          <p>Suitable for Hiking</p>
+          <p>Sizes</p>
+          <p>S</p>
+          <p>M</p>
+          <p>L</p>
+          <p>XL</p>
+          <p>1899-,</p>
+          <button>Add to Cart</button>
+          <button><a href="checkout.html">Checkout</a></button>
+        </article>
+      </section>
+      <section class="skiingWomen">
+        <img src="images/skiing-women.jpg" alt="Section image for skiing jackets women">
+        <h2>Women's Skiing Jackets</h2>
+        <article class="thermoWomen">
+          <img src="images/jacket-thermo-women.jpg" alt="Image of jacket thermo for women">
+          <h3>Jacket Thermo</h3>
+          <p>Suitable for Skiing</p>
+          <p>Sizes</p>
+          <p>S</p>
+          <p>M</p>
+          <p>L</p>
+          <p>XL</p>
+          <p>3225-,</p>
+          <button>Add to Cart</button>
+          <button><a href="checkout.html">Checkout</a></button>
+        </article>
+        <article class="sportWomen">
+          <img src="images/jacket-sport-women.jpg" alt="Image of jacket sport for women">
+          <h3>Jacket Sport</h3>
+          <p>Suitable for Skiing</p>
+          <p>Sizes</p>
+          <p>S</p>
+          <p>M</p>
+          <p>L</p>
+          <p>XL</p>
+          <p>2099-,</p>
+          <button>Add to Cart</button>
+          <button><a href="checkout.html">Checkout</a></button>
+        </article>
+      </section>
     </main>
     
     <footer>
-
+      <p>Where to find us</p>
+      <p>Contact & Visit</p>
+      <p>Follow us on social media</p>
     </footer>
   </body>
 </html>
