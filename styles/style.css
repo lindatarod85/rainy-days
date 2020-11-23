@@ -61,6 +61,7 @@ button {
   font-weight: bold;
   padding: 14px 40px;
   border-radius: 50px;
+  border: none;
 }
 
 button a {
@@ -81,15 +82,30 @@ button:hover {
 .main-nav {
   background-color: #ea580e;
 }
-/* Styling header */
+/*Styling header*/
 
-/* Styling Section images */
+/*Styling Section images on homepage*/
 .newArrivals img {
-  width: 500px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
 }
 
 .bestSellers img {
-  width: 500px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
+}
+/*Styling section images on homepage*/
+
+/*Styling footer*/
+footer {
+  background-color: #6e8bad;
+}
+
+footer img {
+  width: 150px;
+  height: 150px;
+}
+
+.contact {
+  float: center;
 }
