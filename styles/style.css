@@ -84,7 +84,7 @@ button:hover {
 }
 /*Styling header*/
 
-/*Styling Section images on homepage*/
+/*Styling Sections on homepage*/
 .newArrivals img {
   width: 300px;
   height: 300px;
@@ -94,7 +94,7 @@ button:hover {
   width: 300px;
   height: 300px;
 }
-/*Styling section images on homepage*/
+/*Styling sections on homepage*/
 
 /*Styling footer*/
 footer {
@@ -104,8 +104,4 @@ footer {
 footer img {
   width: 150px;
   height: 150px;
-}
-
-.contact {
-  float: center;
 }
