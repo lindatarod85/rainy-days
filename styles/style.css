@@ -4,22 +4,23 @@ body {
   font-family: montserrat, arial, sans-serif;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   font-family: teko, georgia, serif;
-  font-size: 88px;
   color: #07275e;
+}
+
+h1 {
+  font-size: 88px;
 }
 
 h2 {
-  font-family: teko, georgia, serif;
   font-size: 48px;
-  color: #07275e;
 }
 
 h3 {
-  font-family: teko, georgia, serif;
   font-size: 32px;
-  color: #07275e;
 }
 
 p {
@@ -29,8 +30,9 @@ p {
 
 /*Styling header*/
 header img {
-  width: 260px;
+  max-width: 260px;
   height: 140px;
+  padding: 15px;
 }
 
 .sub-nav a {
@@ -40,14 +42,13 @@ header img {
 }
 
 .sub-nav ul {
-  list-style-type: none;
-  padding: 0px 0px 0px 1250px;
+  float: right;
   position: relative;
-  top: -150px;
+  top: -190px;
 }
 
 .sub-nav li {
-  display: inline;
+  display: inline-block;
   padding: 10px;
 }
 
@@ -55,53 +56,224 @@ header img {
   color: #2373bc;
 }
 
-button {
-  background-color: #07275e;
-  color: white;
-  font-weight: bold;
-  padding: 14px 40px;
-  border-radius: 50px;
-  border: none;
-}
-
-button a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-button:hover {
-  background-color: #2373bc;
-}
-
-.main-nav .search {
-  padding: 14px 60px;
-  border-radius: 50px;
+.sub-nav a.current {
+  text-decoration: underline;
 }
 
 .main-nav {
   background-color: #ea580e;
+  padding: 10px;
+  display: flex;
+}
+
+.main-nav a {
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  padding: 14px 24px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  border-color: #07275e;
+  background-color: #07275e;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.main-nav a:hover {
+  background-color: #2373bc;
+}
+
+.mens:visited {
+  background-color: #2373bc;
+}
+
+.womens:visited {
+  background-color: #2373bc;
+}
+
+.main-nav .search {
+  padding: 14px 90px;
+  border-radius: 50px;
+  border-color: #07275e;
 }
 /*Styling header*/
 
-/*Styling Sections on homepage*/
-.newArrivals img {
-  width: 300px;
-  height: 300px;
+/*Styling homepage*/
+.welcome {
+  background-image: url("../images/rainy-days-frontpage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 110vh;
+  position: relative;
 }
 
-.bestSellers img {
-  width: 300px;
-  height: 300px;
+.welcome-content {
+  position: absolute;
+  top: 100px;
+  left: 200px;
 }
-/*Styling sections on homepage*/
+
+.welcome_content h2 {
+  font-size: 48px;
+}
+
+.button {
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  border-color: #07275e;
+  padding: 14px 24px;
+  background-color: #07275e;
+  font-weight: bold;
+  font-size: 12px;
+}
+.button:hover {
+  background-color: #2373bc;
+}
+
+/*Sections*/
+.product-image {
+  object-fit: cover;
+  width: 400px;
+  height: 400px;
+}
+
+.wrap-1 {
+  float: left;
+  padding: 0px 10px;
+}
+
+#bestSellers {
+  clear: both;
+  padding-top: 30px;
+}
+
+.wrap-2 {
+  padding-top: 15px;
+}
+
+.wrap-2 p {
+  padding-bottom: 30px;
+  font-weight: bold;
+}
+
+.price {
+  padding-top: 25px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+#size {
+  color: #07275e;
+}
+
+.wrap-2 button {
+  background-color: #ea580e;
+  color: #fff;
+  display: inline-block;
+  width: 125px;
+  padding: 14px 24px;
+  border-radius: 50px;
+  border-style: none;
+}
+
+button a {
+  text-decoration: none;
+  color: #fff;
+}
+/*Sections*/
+
+/*Womens page*/
+.welcome-women {
+  background-image: url("../images/womens-jackets.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 110vh;
+}
+
+.welcome-women h1 {
+  margin-top: 0px;
+  float: right;
+}
+
+.categories img {
+  object-fit: cover;
+  width: 700px;
+  height: 600px;
+}
+
+.categorie-image {
+  display: inline-block;
+}
+
+.hiking-skiing {
+  float: left;
+}
+/*Womens page*/
+
+/*Mens page*/
+.welcome-men {
+  background-image: url("../images/mens-jackets.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 110vh;
+}
+
+.welcome-men h1 {
+  margin-top: 0px;
+  float: right;
+}
+
+.hiking-skiing .wrap-2 {
+  margin-top: -52px;
+}
+/*Mens page*/
+
+/*Cart*/
+.cart-obtions {
+  clear: both;
+}
+/*Cart*/
+
+/*Icons*/
+.fa-home,
+.fa-envelope,
+.fa-info-circle,
+.fa-phone,
+.fa-map-marker-alt {
+  color: #07275e;
+  padding-right: 3px;
+}
+.fa-shopping-cart {
+  color: white;
+  padding-right: 10px;
+}
 
 /*Styling footer*/
+
+footer {
+  clear: both;
+}
+
 footer {
   background-color: #6e8bad;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px 0px 10px;
 }
 
 footer img {
   width: 150px;
   height: 150px;
+}
+
+.location,
+.contact-visit,
+.follow p {
+  font-size: 18px;
+  font-weight: bold;
 }

@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@600;700&display=swap" rel="stylesheet">
 
     <link href="styles/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
   </head>
   <body>
     <header>
@@ -19,30 +21,43 @@
       
       <nav class="sub-nav" aria-label="Sub-navigation">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><i class="fas fa-home"></i><a href="index.html">Home</a></li>
+          <li><i class="fas fa-envelope"></i><a href="contact.html">Contact</a></li>
+          <li><i class="fas fa-info-circle"></i><a href="about.html">About</a></li>
         </ul>
       </nav>
       
       <nav class="main-nav" aria-label="Main">
-        <button><a href="men.html">Men's Jackets</a></button>
-        <button><a href="women.html">Women's Jackets</a></button>
+        <a href="men.html">Men's Jackets</a>
+        <a href="women.html" class="womens">Women's Jackets</a>
         <input type="text" class="search" placeholder="Search..">
-        <button><a href="cart.html">View Cart</a></button>
+        <a href="cart.html"><i class="fas fa-shopping-cart"></i>View Cart</a>
       </nav>
     </header>
     
     <main>
-      <img src="images/womens-jackets.jpg" alt="Women's Jackets page image">
-      <h1>Women's Jackets</h1>
-      <section class="hikingWomen">
+      <section class="welcome-women">
+        <h1>Women's Jackets</h1>
+      </section>
+      <section class="categories">
+        <div class="categorie-image">
         <img src="images/hiking-women.jpg" alt="Section image for hiking jackets women">
         <h2>Women's Hiking Jackets</h2>
-        <article class="extremeWomen">
+      </div>
+        <div class="categorie-image">
+          <img src="images/skiing-women.jpg" alt="Section image for skiing jackets women">
+          <h2>Women's Skiing Jackets</h2>
+        </div>
+      </section>
+
+
+        <section class="hiking-skiing">
+          <div class="wrap-1">
           <a href="product.html">
-          <img src="images/jacket-extreme-women.jpg" alt="Image of jacket extreme for women">
+          <img src="images/jacket-extreme-women.jpg" alt="Image of jacket extreme for women" class="product-image">
           </a>
+        </div>
+        <div class="wrap-1 wrap-2">
           <h3>Jacket Extreme</h3>
           <p>Suitable for Hiking</p>
           <label for="Sizes">Choose size</label>
@@ -52,31 +67,14 @@
             <option value="L">L</option>
             <option value="XL">XL</option>
           </select>
-          <p>2225-,</p>
+          <p class="price">2225-,</p>
           <button>Add to Cart</button>
           <button><a href="checkout.html">Checkout</a></button>
-        </article>
-        <article class="activeWomen">
-          <img src="images/jacket-active-women.jpg" alt="Image of jacket active for women">
-          <h3>Jacket Active</h3>
-          <p>Suitable for Hiking</p>
-          <label for="Sizes">Choose size</label>
-          <select name="size" id="size">
-            <option value="S">S</option>
-            <option value="M">M</option>
-            <option value="L">L</option>
-            <option value="XL">XL</option>
-          </select>
-          <p>1899-,</p>
-          <button>Add to Cart</button>
-          <button><a href="checkout.html">Checkout</a></button>
-        </article>
-      </section>
-      <section class="skiingWomen">
-        <img src="images/skiing-women.jpg" alt="Section image for skiing jackets women">
-        <h2>Women's Skiing Jackets</h2>
-        <article class="thermoWomen">
-          <img src="images/jacket-thermo-women.jpg" alt="Image of jacket thermo for women">
+        </div>
+        <div class="wrap-1">
+          <img src="images/jacket-thermo-women.jpg" alt="Image of jacket thermo for women" class="product-image">
+          </div>
+          <div class="wrap-1 wrap-2">
           <h3>Jacket Thermo</h3>
           <p>Suitable for Skiing</p>
           <label for="Sizes">Choose size</label>
@@ -86,12 +84,34 @@
             <option value="L">L</option>
             <option value="XL">XL</option>
           </select>
-          <p>3225-,</p>
+          <p class="price">3225-,</p>
           <button>Add to Cart</button>
           <button><a href="checkout.html">Checkout</a></button>
-        </article>
-        <article class="sportWomen">
-          <img src="images/jacket-sport-women.jpg" alt="Image of jacket sport for women">
+        </div>
+      </section>
+      
+        <section class="hiking-skiing">
+          <div class="wrap-1">
+            <img src="images/jacket-active-women.jpg" alt="Image of jacket active for women" class="product-image">
+            </div>
+            <div class="wrap-1 wrap-2">
+            <h3>Jacket Active</h3>
+            <p>Suitable for Hiking</p>
+            <label for="Sizes">Choose size</label>
+            <select name="size" id="size">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+            <p class="price">1899-,</p>
+            <button>Add to Cart</button>
+            <button><a href="checkout.html">Checkout</a></button>
+          </div>
+        <div class="wrap-1">
+          <img src="images/jacket-sport-women.jpg" alt="Image of jacket sport for women" class="product-image">
+          </div>
+          <div class="wrap-1 wrap-2">
           <h3>Jacket Sport</h3>
           <p>Suitable for Skiing</p>
           <label for="Sizes">Choose size</label>
@@ -101,27 +121,30 @@
             <option value="L">L</option>
             <option value="XL">XL</option>
           </select>
-          <p>2099-,</p>
+          <p class="price">2099-,</p>
           <button>Add to Cart</button>
           <button><a href="checkout.html">Checkout</a></button>
-        </article>
-      </section>
+        </div>
+        </section>
+      
     </main>
     
     <footer>
-      <section class="where">
-        <p>Where to find us</p>
-        <img src="images/map.jpg" alt="Location of Rainy Days">
-      </section>
-      <section class="contact">
-        <p>Contact & Visit</p>
-        <p>555 55 555</p>
-        <p>rainydays@mail.com</p>
-        <p>Fictional street</p>
-      </section>
-      <section class="follow">
-        <p>Follow us on social media</p>
-      </section>
-    </footer>
-  </body>
+      <div class="location">
+      <p>Where to find us</p>
+      <img src="images/map.jpg" alt="Location of Rainy Days">
+      </div>
+    
+      <div class="contact">
+      <p class="contact-visit">Contact & Visit</p>
+      <p><i class="fas fa-phone"></i>555 55 555</p>
+      <p><i class="fas fa-envelope"></i>rainydays@mail.com</p>
+      <p><i class="fas fa-map-marker-alt"></i>Fictional street</p>
+      </div>
+
+      <div class="follow">
+      <p>Follow us on social media</p>
+      </div>
+  </footer>
+</body>
 </html>

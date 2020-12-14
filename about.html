@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@600;700&display=swap" rel="stylesheet">
 
     <link href="styles/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
   </head>
   <body>
     <header>
@@ -19,17 +21,17 @@
       
       <nav class="sub-nav" aria-label="Sub-navigation">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><i class="fas fa-home"></i><a href="index.html">Home</a></li>
+          <li><i class="fas fa-envelope"></i><a href="contact.html">Contact</a></li>
+          <li><i class="fas fa-info-circle"></i><a href="about.html" class="current">About</a></li>
         </ul>
       </nav>
       
       <nav class="main-nav" aria-label="Main">
-        <button><a href="men.html">Men's Jackets</a></button>
-        <button><a href="women.html">Women's Jackets</a></button>
+        <a href="men.html">Men's Jackets</a>
+        <a href="women.html">Women's Jackets</a>
         <input type="text" class="search" placeholder="Search..">
-        <button><a href="cart.html">View Cart</a></button>
+        <a href="cart.html"><i class="fas fa-shopping-cart"></i>View Cart</a>
       </nav>
     </header>
     
@@ -42,19 +44,21 @@
     </main>
     
     <footer>
-      <section class="where">
-        <p>Where to find us</p>
-        <img src="images/map.jpg" alt="Location of Rainy Days">
-      </section>
-      <section class="contact">
-        <p>Contact & Visit</p>
-        <p>555 55 555</p>
-        <p>rainydays@mail.com</p>
-        <p>Fictional street</p>
-      </section>
-      <section class="follow">
-        <p>Follow us on social media</p>
-      </section>
-    </footer>
-  </body>
+      <div class="location">
+      <p>Where to find us</p>
+      <img src="images/map.jpg" alt="Location of Rainy Days">
+      </div>
+    
+      <div class="contact">
+      <p class="contact-visit">Contact & Visit</p>
+      <p><i class="fas fa-phone"></i>555 55 555</p>
+      <p><i class="fas fa-envelope"></i>rainydays@mail.com</p>
+      <p><i class="fas fa-map-marker-alt"></i>Fictional street</p>
+      </div>
+
+      <div class="follow">
+      <p>Follow us on social media</p>
+      </div>
+  </footer>
+</body>
 </html>

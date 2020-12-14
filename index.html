@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@600;700&display=swap" rel="stylesheet">
 
     <link href="styles/style.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
   </head>
   <body>
     <header>
@@ -19,87 +21,81 @@
       
       <nav class="sub-nav" aria-label="Sub-navigation">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><i class="fas fa-home"></i><a href="index.html" class="current">Home</a></li>
+          <li><i class="fas fa-envelope"></i><a href="contact.html">Contact</a></li>
+          <li><i class="fas fa-info-circle"></i><a href="about.html">About</a></li>
         </ul>
       </nav>
       
       <nav class="main-nav" aria-label="Main">
-        <button><a href="men.html">Men's Jackets</a></button>
-        <button><a href="women.html">Women's Jackets</a></button>
+        <a href="men.html">Men's Jackets</a>
+        <a href="women.html">Women's Jackets</a>
         <input type="text" class="search" placeholder="Search..">
-        <button><a href="cart.html">View Cart</a></button>
+        <a href="cart.html"><i class="fas fa-shopping-cart"></i>View Cart</a>
       </nav>
     </header>
     
     <main>
-      <img src="images/rainy-days-frontpage.jpg" alt="Frontpage image for Rainy Days">
+      <section class="welcome">
+        <div class="welcome-content">
       <h2>Pushing the Comfort Zone</h2>
-      <button>New Arrivals</button>
-      <button>Best Seller's</button>
-
-      <section class="newArrivals">
-        <h2>New Arrivals</h2>
-        <article class="mensNew">
-          <p>Men's</p>
-          <a href="product.html">
-          <img src="images/jacket-extreme-men.jpg" alt="Image of jacket Extreme for Men">
-          </a>
-          <h3>Jacket Extreme</h3>
-          <p>Suitable for Hiking</p>
-          <label for="Sizes">Choose size</label>
-          <select name="size" id="size">
-            <option value="S">S</option>
-            <option value="M">M</option>
-            <option value="L">L</option>
-            <option value="XL">XL</option>
-          </select>
-          <p>2225-,</p>
-          <button>Add to Cart</button>
-          <button><a href="checkout.html">Checkout</a></button>
-        </article>
-
-        <article class="womensNew">
-          <p>Women's</p>
-          <img src="images/jacket-extreme-women.jpg" alt="Image of jacket Extreme for Women">
-          <h3>Jacket Extreme</h3>
-          <p>Suitable for Hiking</p>
-          <label for="Sizes">Choose size</label>
-          <select name="size" id="size">
-            <option value="S">S</option>
-            <option value="M">M</option>
-            <option value="L">L</option>
-            <option value="XL">XL</option>
-          </select>
-          <p>2225-,</p>
-          <button>Add to Cart</button>
-          <button><a href="checkout.html">Checkout</a></button>
-        </article>
+      <a href="#newArrivals" class="button">New Arrivals</a>
+      <a href="#bestSellers" class="button">Best Seller's</a>
+        </div>
       </section>
 
-      <section class="bestSellers">
-        <h2>Best Seller's</h2>
-        <article class="mensBest">
+      <section id="newArrivals">
+        <h2>New Arrivals</h2>
+        
+        <div class="wrap-1">
           <p>Men's</p>
-          <img src="images/jacket-active-men.jpg" alt="Image of jacket Active for Men">
-          <h3>Jacket Active</h3>
+          <a href="product.html">
+          <img src="images/jacket-extreme-men.jpg" alt="Image of jacket Extreme for Men" class="product-image">
+          </a>
+        </div>
+          <div class="wrap-1 wrap-2">
+          <h3>Jacket Extreme</h3>
           <p>Suitable for Hiking</p>
-          <label for="Sizes">Choose size</label>
+          <label for="size" id="size">Choose size</label>
           <select name="size" id="size">
             <option value="S">S</option>
             <option value="M">M</option>
             <option value="L">L</option>
             <option value="XL">XL</option>
           </select>
-          <p>1899-,</p>
-          <button>Add to Cart</button>
-          <button><a href="checkout.html">Checkout</a></button>
-        </article>
-
-        <article class="womensBest">
+          <p class="price">2225-,</p>
+          <button class="add_cart">Add to Cart</button>
+          <button class="checkout"><a href="checkout.html">Checkout</a></button>
+        </div>
+      
+         <div class="wrap-1">
           <p>Women's</p>
-          <img src="images/jacket-active-women.jpg" alt="Image of jacket Active for Women">
+          <img src="images/jacket-extreme-women.jpg" alt="Image of jacket Extreme for Women" class="product-image">
+         </div>
+         <div class="wrap-1 wrap-2">
+          <h3>Jacket Extreme</h3>
+          <p>Suitable for Hiking</p>
+          <label for="size" id="size">Choose size</label>
+          <select name="size" id="size">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+          <p class="price">2225-,</p>
+          <button>Add to Cart</button>
+          <button><a href="checkout.html">Checkout</a></button>
+        </div>
+      </section>
+
+      <section id="bestSellers">
+        <h2>Best Seller's</h2>
+
+        <div class="wrap-1">
+          <p>Men's</p>
+          <img src="images/jacket-active-men.jpg" alt="Image of jacket Active for Men" class="product-image">
+        </div>
+        <div class="wrap-1 wrap-2">
           <h3>Jacket Active</h3>
           <p>Suitable for Hiking</p>
           <label for="Sizes">Choose size</label>
@@ -109,27 +105,48 @@
             <option value="L">L</option>
             <option value="XL">XL</option>
           </select>
-          <p>1899-,</p>
+          <p class="price">1899-,</p>
           <button>Add to Cart</button>
           <button><a href="checkout.html">Checkout</a></button>
-        </article>
+        </div>
+
+        <div class="wrap-1">
+          <p>Women's</p>
+          <img src="images/jacket-active-women.jpg" alt="Image of jacket Active for Women" class="product-image">
+        </div>
+          <div class="wrap-1 wrap-2">
+          <h3>Jacket Active</h3>
+          <p>Suitable for Hiking</p>
+          <label for="Sizes">Choose size</label>
+          <select name="size" id="size">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+          <p class="price">1899-,</p>
+          <button>Add to Cart</button>
+          <button><a href="checkout.html">Checkout</a></button>
+        </div>
       </section>
     </main>
     
     <footer>
-      <section class="where">
+        <div class="location">
         <p>Where to find us</p>
         <img src="images/map.jpg" alt="Location of Rainy Days">
-      </section>
-      <section class="contact">
-        <p>Contact & Visit</p>
-        <p>555 55 555</p>
-        <p>rainydays@mail.com</p>
-        <p>Fictional street</p>
-      </section>
-      <section class="follow">
+        </div>
+      
+        <div class="contact">
+        <p class="contact-visit">Contact & Visit</p>
+        <p><i class="fas fa-phone"></i>555 55 555</p>
+        <p><i class="fas fa-envelope"></i>rainydays@mail.com</p>
+        <p><i class="fas fa-map-marker-alt"></i>Fictional street</p>
+        </div>
+  
+        <div class="follow">
         <p>Follow us on social media</p>
-      </section>
+        </div>
     </footer>
   </body>
 </html>
