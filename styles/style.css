@@ -2,6 +2,7 @@
 body {
   background-color: #d8dfe9;
   font-family: montserrat, arial, sans-serif;
+  margin: 0px;
 }
 
 h1,
@@ -41,12 +42,6 @@ header img {
   font-weight: bold;
 }
 
-.sub-nav ul {
-  float: right;
-  position: relative;
-  top: -190px;
-}
-
 .sub-nav li {
   display: inline-block;
   padding: 10px;
@@ -60,10 +55,16 @@ header img {
   text-decoration: underline;
 }
 
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
 .main-nav {
   background-color: #ea580e;
   padding: 10px;
   display: flex;
+  justify-content: space-between;
 }
 
 .main-nav a {
@@ -93,9 +94,9 @@ header img {
 }
 
 .main-nav .search {
-  padding: 14px 90px;
+  padding: 14px 120px;
   border-radius: 50px;
-  border-color: #07275e;
+  border: none;
 }
 /*Styling header*/
 
@@ -135,6 +136,11 @@ header img {
   background-color: #2373bc;
 }
 
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 /*Sections*/
 .product-image {
   object-fit: cover;
@@ -142,27 +148,7 @@ header img {
   height: 400px;
 }
 
-.wrap-1 {
-  float: left;
-  padding: 0px 10px;
-}
-
-#bestSellers {
-  clear: both;
-  padding-top: 30px;
-}
-
-.wrap-2 {
-  padding-top: 15px;
-}
-
-.wrap-2 p {
-  padding-bottom: 30px;
-  font-weight: bold;
-}
-
 .price {
-  padding-top: 25px;
   font-size: 32px;
   font-weight: bold;
 }
@@ -185,7 +171,86 @@ button a {
   text-decoration: none;
   color: #fff;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 15px;
+}
+
+.grid-container h2 {
+  grid-column: -1/1;
+}
+
+.wrap-2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-content: space-between;
+  padding-top: 14px;
+}
+
+.wrap-2 div,
+.wrap-2 p {
+  grid-column: 1 / span 2;
+}
+
+.wrap-2 button:nth-of-type(1) {
+  grid-column: 1;
+}
+
+.wrap-2 button:nth-of-type(2) {
+  grid-column: 2;
+}
+
+.size,
+.size:before,
+.size:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /*Sections*/
+
+/* Contact page */
+.contact input,
+textarea {
+  border: 1px solid #07275e;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+textarea {
+  height: 100px;
+}
+
+label {
+  margin-left: 10px;
+  color: #07275e;
+}
+
+.contact {
+  display: flex;
+}
+
+.contact-form > * {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact > * {
+  flex: 1;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+}
+
+.contact-info p {
+  font-weight: bold;
+}
 
 /*Womens page*/
 .welcome-women {
@@ -228,15 +293,44 @@ button a {
   float: right;
 }
 
-.hiking-skiing .wrap-2 {
-  margin-top: -52px;
+.categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
+
 /*Mens page*/
 
 /*Cart*/
-.cart-obtions {
-  clear: both;
+.cart-details p {
+  font-size: 24px;
 }
+
+.cart-details {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.cart-item {
+  justify-self: end;
+}
+
+.items-in-cart {
+  display: inline grid;
+  grid-template-columns: auto auto;
+  column-gap: 20px;
+}
+
+.cart-obtions {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}
+
+.product-image-small {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
 /*Cart*/
 
 /*Icons*/
@@ -244,7 +338,8 @@ button a {
 .fa-envelope,
 .fa-info-circle,
 .fa-phone,
-.fa-map-marker-alt {
+.fa-map-marker-alt, 
+.fa-trash-alt {
   color: #07275e;
   padding-right: 3px;
 }
@@ -253,17 +348,43 @@ button a {
   padding-right: 10px;
 }
 
+.fa-arrow-down {
+  padding-left: 10px;
+}
+
+.fa-facebook-square,
+.fa-instagram,
+.fa-linkedin {
+  color: #07275e;
+  padding-left: 26px;
+/*Icons*/
+
 /*Styling footer*/
 
 footer {
-  clear: both;
+  margin-top: 10px;
 }
 
 footer {
   background-color: #6e8bad;
-  display: flex;
-  justify-content: space-between;
   padding: 0px 10px 0px 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.contact-details {
+  display: grid;
+  align-content: space-around;
+  justify-self: center;
+}
+
+.follow {
+  justify-self: end;
+}
+
+.flex-icons {
+  display: flex;
+  justify-content: flex-start;
 }
 
 footer img {
@@ -277,3 +398,5 @@ footer img {
   font-size: 18px;
   font-weight: bold;
 }
+
+/* mobile version */

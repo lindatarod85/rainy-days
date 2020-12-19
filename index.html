@@ -15,10 +15,13 @@
   </head>
   <body>
     <header>
+      <div class="top">
+        <div>
       <a href="index.html">
         <img src="images/RainyDays_Logo.png" alt="Logo for Rainy Days">
       </a>
-      
+        </div>
+      <div>
       <nav class="sub-nav" aria-label="Sub-navigation">
         <ul>
           <li><i class="fas fa-home"></i><a href="index.html" class="current">Home</a></li>
@@ -26,6 +29,8 @@
           <li><i class="fas fa-info-circle"></i><a href="about.html">About</a></li>
         </ul>
       </nav>
+      </div>
+      </div>
       
       <nav class="main-nav" aria-label="Main">
         <a href="men.html">Men's Jackets</a>
@@ -39,32 +44,37 @@
       <section class="welcome">
         <div class="welcome-content">
       <h2>Pushing the Comfort Zone</h2>
-      <a href="#newArrivals" class="button">New Arrivals</a>
-      <a href="#bestSellers" class="button">Best Seller's</a>
+      <div class="button-container">
+      <a href="#new-arrivals" class="button">New Arrivals<i class="fas fa-arrow-down"></i></a>
+      <a href="#best-sellers" class="button">Best Seller's<i class="fas fa-arrow-down"></i></a>
+      </div>
         </div>
       </section>
 
-      <section id="newArrivals">
-        <h2>New Arrivals</h2>
-        
+      <section class="grid-container">
+        <h2 id="new-arrivals">New Arrivals</h2>
         <div class="wrap-1">
           <p>Men's</p>
           <a href="product.html">
           <img src="images/jacket-extreme-men.jpg" alt="Image of jacket Extreme for Men" class="product-image">
           </a>
         </div>
-          <div class="wrap-1 wrap-2">
+          <div class="wrap-2">
+            <div>
           <h3>Jacket Extreme</h3>
           <p>Suitable for Hiking</p>
-          <label for="size" id="size">Choose size</label>
+            </div>
+            <div>
+          <label class="size" for="size" id="size">Choose size</label>
           <select name="size" id="size">
             <option value="S">S</option>
             <option value="M">M</option>
             <option value="L">L</option>
             <option value="XL">XL</option>
           </select>
+            </div>
           <p class="price">2225-,</p>
-          <button class="add_cart">Add to Cart</button>
+          <button class="add">Add to Cart</button>
           <button class="checkout"><a href="checkout.html">Checkout</a></button>
         </div>
       
@@ -72,9 +82,12 @@
           <p>Women's</p>
           <img src="images/jacket-extreme-women.jpg" alt="Image of jacket Extreme for Women" class="product-image">
          </div>
-         <div class="wrap-1 wrap-2">
+         <div class="wrap-2">
+           <div>
           <h3>Jacket Extreme</h3>
           <p>Suitable for Hiking</p>
+          </div>
+           <div>
           <label for="size" id="size">Choose size</label>
           <select name="size" id="size">
             <option value="S">S</option>
@@ -82,22 +95,23 @@
             <option value="L">L</option>
             <option value="XL">XL</option>
           </select>
+           </div>
           <p class="price">2225-,</p>
-          <button>Add to Cart</button>
-          <button><a href="checkout.html">Checkout</a></button>
+          <button class="add">Add to Cart</button>
+          <button class="checkout"><a href="checkout.html">Checkout</a></button>
         </div>
-      </section>
-
-      <section id="bestSellers">
-        <h2>Best Seller's</h2>
-
+      
+        <h2 id="best-sellers">Best Seller's</h2>
         <div class="wrap-1">
           <p>Men's</p>
           <img src="images/jacket-active-men.jpg" alt="Image of jacket Active for Men" class="product-image">
         </div>
-        <div class="wrap-1 wrap-2">
+        <div class="wrap-2">
+          <div>
           <h3>Jacket Active</h3>
           <p>Suitable for Hiking</p>
+          </div>
+          <div>
           <label for="Sizes">Choose size</label>
           <select name="size" id="size">
             <option value="S">S</option>
@@ -105,18 +119,22 @@
             <option value="L">L</option>
             <option value="XL">XL</option>
           </select>
+          </div>
           <p class="price">1899-,</p>
-          <button>Add to Cart</button>
-          <button><a href="checkout.html">Checkout</a></button>
+          <button class="add">Add to Cart</button>
+          <button class="checkout"><a href="checkout.html">Checkout</a></button>
         </div>
 
         <div class="wrap-1">
           <p>Women's</p>
           <img src="images/jacket-active-women.jpg" alt="Image of jacket Active for Women" class="product-image">
         </div>
-          <div class="wrap-1 wrap-2">
+          <div class="wrap-2">
+            <div>
           <h3>Jacket Active</h3>
           <p>Suitable for Hiking</p>
+            </div>
+            <div>
           <label for="Sizes">Choose size</label>
           <select name="size" id="size">
             <option value="S">S</option>
@@ -124,9 +142,10 @@
             <option value="L">L</option>
             <option value="XL">XL</option>
           </select>
+            </div>
           <p class="price">1899-,</p>
-          <button>Add to Cart</button>
-          <button><a href="checkout.html">Checkout</a></button>
+          <button class="add">Add to Cart</button>
+          <button class="checkout"><a href="checkout.html">Checkout</a></button>
         </div>
       </section>
     </main>
@@ -137,15 +156,26 @@
         <img src="images/map.jpg" alt="Location of Rainy Days">
         </div>
       
-        <div class="contact">
+        <div class="contact-details">
         <p class="contact-visit">Contact & Visit</p>
+        <div>
         <p><i class="fas fa-phone"></i>555 55 555</p>
+        </div>
+          <div>
         <p><i class="fas fa-envelope"></i>rainydays@mail.com</p>
+          </div>
+          <div>
         <p><i class="fas fa-map-marker-alt"></i>Fictional street</p>
+          </div>
         </div>
   
         <div class="follow">
         <p>Follow us on social media</p>
+        <div class="flex-icons">
+        <i class="fab fa-facebook-square fa-3x"></i>
+        <i class="fab fa-instagram fa-3x"></i>
+        <i class="fab fa-linkedin fa-3x"></i>
+        </div>
         </div>
     </footer>
   </body>

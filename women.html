@@ -15,10 +15,13 @@
   </head>
   <body>
     <header>
+      <div class="top">
+        <div>
       <a href="index.html">
         <img src="images/RainyDays_Logo.png" alt="Logo for Rainy Days">
       </a>
-      
+        </div>
+      <div>
       <nav class="sub-nav" aria-label="Sub-navigation">
         <ul>
           <li><i class="fas fa-home"></i><a href="index.html">Home</a></li>
@@ -26,6 +29,8 @@
           <li><i class="fas fa-info-circle"></i><a href="about.html">About</a></li>
         </ul>
       </nav>
+      </div>
+      </div>
       
       <nav class="main-nav" aria-label="Main">
         <a href="men.html">Men's Jackets</a>
@@ -49,102 +54,125 @@
           <h2>Women's Skiing Jackets</h2>
         </div>
       </section>
-
-
-        <section class="hiking-skiing">
+      
+      <section class="grid-container">
           <div class="wrap-1">
           <a href="product.html">
           <img src="images/jacket-extreme-women.jpg" alt="Image of jacket extreme for women" class="product-image">
           </a>
         </div>
-        <div class="wrap-1 wrap-2">
+        <div class="wrap-2">
+          <div>
           <h3>Jacket Extreme</h3>
           <p>Suitable for Hiking</p>
-          <label for="Sizes">Choose size</label>
+          </div>
+          <div>
+          <label class="size" for="Sizes">Choose size</label>
           <select name="size" id="size">
             <option value="S">S</option>
             <option value="M">M</option>
             <option value="L">L</option>
             <option value="XL">XL</option>
           </select>
+          </div>
           <p class="price">2225-,</p>
-          <button>Add to Cart</button>
-          <button><a href="checkout.html">Checkout</a></button>
+          <button class="add">Add to Cart</button>
+          <button class="checkout"><a href="checkout.html">Checkout</a></button>
         </div>
         <div class="wrap-1">
           <img src="images/jacket-thermo-women.jpg" alt="Image of jacket thermo for women" class="product-image">
           </div>
-          <div class="wrap-1 wrap-2">
+          <div class="wrap-2">
+            <div>
           <h3>Jacket Thermo</h3>
           <p>Suitable for Skiing</p>
-          <label for="Sizes">Choose size</label>
+            </div>
+            <div>
+          <label class="size" for="Sizes">Choose size</label>
           <select name="size" id="size">
             <option value="S">S</option>
             <option value="M">M</option>
             <option value="L">L</option>
             <option value="XL">XL</option>
           </select>
-          <p class="price">3225-,</p>
-          <button>Add to Cart</button>
-          <button><a href="checkout.html">Checkout</a></button>
-        </div>
-      </section>
-      
-        <section class="hiking-skiing">
-          <div class="wrap-1">
-            <img src="images/jacket-active-women.jpg" alt="Image of jacket active for women" class="product-image">
             </div>
-            <div class="wrap-1 wrap-2">
-            <h3>Jacket Active</h3>
-            <p>Suitable for Hiking</p>
-            <label for="Sizes">Choose size</label>
+          <p class="price">3225-,</p>
+          <button class="add">Add to Cart</button>
+          <button class="checkout"><a href="checkout.html">Checkout</a></button>
+        </div>
+        
+        <div class="wrap-1">
+          <img src="images/jacket-active-women.jpg" alt="Image of jacket active for women" class="product-image">
+        </div>
+        <div class="wrap-2">
+          <div>
+          <h3>Jacket Active</h3>
+          <p>Suitable for Hiking</p>
+          </div>
+          <div>
+            <label class="size" for="Sizes">Choose size</label>
             <select name="size" id="size">
               <option value="S">S</option>
               <option value="M">M</option>
               <option value="L">L</option>
               <option value="XL">XL</option>
             </select>
-            <p class="price">1899-,</p>
-            <button>Add to Cart</button>
-            <button><a href="checkout.html">Checkout</a></button>
           </div>
+            <p class="price">1899-,</p>
+            <button class="add">Add to Cart</button>
+            <button class="checkout"><a href="checkout.html">Checkout</a></button>
+        </div>
         <div class="wrap-1">
           <img src="images/jacket-sport-women.jpg" alt="Image of jacket sport for women" class="product-image">
           </div>
-          <div class="wrap-1 wrap-2">
+          <div class="wrap-2">
+            <div>
           <h3>Jacket Sport</h3>
           <p>Suitable for Skiing</p>
-          <label for="Sizes">Choose size</label>
+            </div>
+            <div>
+          <label class="size" for="Sizes">Choose size</label>
           <select name="size" id="size">
             <option value="S">S</option>
             <option value="M">M</option>
             <option value="L">L</option>
             <option value="XL">XL</option>
           </select>
+            </div>
           <p class="price">2099-,</p>
-          <button>Add to Cart</button>
-          <button><a href="checkout.html">Checkout</a></button>
+          <button class="add">Add to Cart</button>
+          <button class="checkout"><a href="checkout.html">Checkout</a></button>
         </div>
         </section>
+      </main>
+    
+      <footer>
+        <div class="location">
+        <p>Where to find us</p>
+        <img src="images/map.jpg" alt="Location of Rainy Days">
+        </div>
       
-    </main>
-    
-    <footer>
-      <div class="location">
-      <p>Where to find us</p>
-      <img src="images/map.jpg" alt="Location of Rainy Days">
-      </div>
-    
-      <div class="contact">
-      <p class="contact-visit">Contact & Visit</p>
-      <p><i class="fas fa-phone"></i>555 55 555</p>
-      <p><i class="fas fa-envelope"></i>rainydays@mail.com</p>
-      <p><i class="fas fa-map-marker-alt"></i>Fictional street</p>
-      </div>
-
-      <div class="follow">
-      <p>Follow us on social media</p>
-      </div>
-  </footer>
-</body>
+        <div class="contact-details">
+        <p class="contact-visit">Contact & Visit</p>
+        <div>
+        <p><i class="fas fa-phone"></i>555 55 555</p>
+        </div>
+          <div>
+        <p><i class="fas fa-envelope"></i>rainydays@mail.com</p>
+          </div>
+          <div>
+        <p><i class="fas fa-map-marker-alt"></i>Fictional street</p>
+          </div>
+        </div>
+  
+        <div class="follow">
+        <p>Follow us on social media</p>
+        <div class="flex-icons">
+        <i class="fab fa-facebook-square fa-3x"></i>
+        <i class="fab fa-instagram fa-3x"></i>
+        <i class="fab fa-linkedin fa-3x"></i>
+        </div>
+        </div>
+    </footer>
+  </body>
 </html>
