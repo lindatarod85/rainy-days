@@ -13,18 +13,29 @@
 
   </head>
   <body>
+      <section class="product-details">
       <h1>Jacket Extreme Men's</h1>
-      <img src="images/jacket-extreme-men.jpg" alt="Product image of Jacket extreme for men">
-      <p>The jacket is suitable for hiking under extreme conditions.</p>
-      <p>Keeps you warm and dry</p>
-      <p>Available sizes</p>
-      <p>S</p>
-      <p>M</p>
-      <p>L</p>
-      <p>XL</p>
-      <p>Price</p>
-      <p>2225-,</p>
-      <button>Add to Cart</button>
-      <button><a href="checkout.html">Checkout</a></button>
-  </body>
-  </html>
+      <div>
+          <img src="images/jacket-extreme-men.jpg" alt="Product image of Jacket extreme for men" class="product-image-large">
+        </div>
+        <div class="wrap-2">
+            <div>
+            <p>The jacket is suitable for hiking under extreme conditions.</p>
+            <p>Keeps you warm and dry</p>
+            </div>
+            <div>
+                <label for="size" id="size">Choose size</label>
+                <select name="size" id="size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+            </div>
+            <p>Price: <span>2225-,</span></p>
+            <button class="add">Add to Cart</button>
+            <button class="checkout"><a href="checkout.html">Checkout</a></button>
+        </div>
+    </section>
+</body>
+</html>
