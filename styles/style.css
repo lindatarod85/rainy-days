@@ -63,7 +63,6 @@ header img {
 .main-nav {
   display: flex;
   flex-direction: column;
-  align-content: space-between;
 }
 
 .main-nav a {
@@ -93,6 +92,7 @@ header img {
 }
 
 .main-nav .search {
+  max-width: 100px;
   padding: 14px 120px;
   border-radius: 50px;
   border: none;
@@ -106,8 +106,13 @@ header img {
   display: none;
 }
 
+.menu {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 #menu:checked ~ .main-nav {
-  display: block;
+  display: flex;
 }
 
 /*Styling header*/
@@ -127,7 +132,7 @@ header img {
   left: 200px;
 }
 
-.welcome_content h2 {
+.welcome-content h2 {
   font-size: 48px;
 }
 
@@ -195,7 +200,6 @@ button a {
 
 .wrap-1 {
   max-width: 400px;
-  justify-self: end;
 }
 
 .grid-container h2 {
@@ -405,7 +409,7 @@ label {
 .fa-instagram,
 .fa-linkedin {
   color: #07275e;
-  padding-left: 26px;
+  padding-right: 26px;
 }
 /*Icons*/
 
@@ -458,13 +462,6 @@ footer img {
   }
 }
 
-/*mobile version*/
-@media (max-width: 700px) {
-  .grid-container {
-    grid-template-columns: 1fr;
-  }
-}
-
 @media (min-width: 1000px) {
   .main-nav {
     background-color: #ea580e;
@@ -476,5 +473,27 @@ footer img {
 
   .menu {
     display: none;
+  }
+}
+
+/*mobile version*/
+@media (max-width: 700px) {
+  .welcome-content {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+  }
+
+  .welcome-content h2 {
+    font-size: 40px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
   }
 }
