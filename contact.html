@@ -12,26 +12,31 @@
     <link href="styles/style.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <header>
       <div class="top">
         <div>
-      <a href="index.html">
-        <img src="images/RainyDays_Logo.png" alt="Logo for Rainy Days">
-      </a>
+          <a href="index.html">
+            <img src="images/RainyDays_Logo.png" alt="Logo for Rainy Days">
+          </a>
         </div>
-      <div>
-      <nav class="sub-nav" aria-label="Sub-navigation">
-        <ul>
-          <li><i class="fas fa-home"></i><a href="index.html">Home</a></li>
-          <li><i class="fas fa-envelope"></i><a href="contact.html" class="current">Contact</a></li>
-          <li><i class="fas fa-info-circle"></i><a href="about.html">About</a></li>
-        </ul>
-      </nav>
+        <div>
+          <label for="hamburger-menu" class="hamburger-menu"><i class="fas fa-bars"></i></label>
+          <input type="checkbox" id="hamburger-menu">
+          <nav class="sub-nav" aria-label="Sub-navigation">
+            <ul>
+              <li><i class="fas fa-home"></i><a href="index.html">Home</a></li>
+              <li><i class="fas fa-envelope"></i><a href="contact.html" class="current">Contact</a></li>
+              <li><i class="fas fa-info-circle"></i><a href="about.html">About</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
-      </div>
-      
+      <label for="menu" class="menu">Menu</label>
+      <input type="checkbox" id="menu">
       <nav class="main-nav" aria-label="Main">
         <a href="men.html">Men's Jackets</a>
         <a href="women.html">Women's Jackets</a>
