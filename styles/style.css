@@ -478,8 +478,7 @@ footer img {
   }
 
   .categories {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: none;
   }
 }
 
@@ -544,6 +543,14 @@ footer img {
     min-height: 70vh;
   }
 
+  .welcome-men {
+    min-height: 70vh;
+  }
+
+  .welcome-women {
+    min-height: 70vh;
+  }
+
   .welcome-content {
     position: absolute;
     top: 10px;
@@ -575,11 +582,27 @@ footer img {
   .welcome {
     min-height: 50vh;
   }
+
+  .welcome-men {
+    min-height: 50vh;
+  }
+
+  .welcome-women {
+    min-height: 50vh;
+  }
 }
 
 @media (max-width: 500px) {
   .welcome {
     min-height: 30vh;
+  }
+
+  .welcome-men {
+    min-height: 40vh;
+  }
+
+  .welcome-women {
+    min-height: 40vh;
   }
 }
 
