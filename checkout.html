@@ -17,13 +17,24 @@
   </head>
   <body>
       <h1>Checkout</h1>
-      <p>Your cart is currently empty</p>
-      <a href="index.html">Continue shopping</a>
-      <p>Items in cart</p>
-      <p>0</p>
-      <p>Total</p>
-      <p>0</p>
-      <p>Choose payment</p>
-      <button>Order & Pay</button>
+      <p class="empty">Your cart is currently empty</p>
+      <a href="index.html" class="continue">Continue shopping<i class="fas fa-arrow-right"></i></a>
+      <section class="cart-details">
+        <p>Items in cart</p>
+        <p>0</p>
+        <p>Total</p>
+        <p>0</p>
+      </section>
+      <p>Choose payment:</p>
+      <div class="order">
+        <div class="cards">
+          <i class="fab fa-cc-visa fa-3x"></i>
+          <i class="fab fa-cc-mastercard fa-3x"></i>
+          <i class="fab fa-cc-paypal fa-3x"></i>
+        </div>
+      <div>
+        <button class="button">Order & Pay</button>
+      </div>
+    </div>
   </body>
   </html>
