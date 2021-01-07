@@ -149,6 +149,7 @@ header img {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
+  background-position: center center;
   position: relative;
 }
 
@@ -322,7 +323,8 @@ label {
   background-image: url("../images/womens-jackets.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 110vh;
+  background-position: center center;
+  min-height: 100vh;
 }
 
 .welcome-women h1 {
@@ -335,7 +337,8 @@ label {
   background-image: url("../images/mens-jackets.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 110vh;
+  background-position: center center;
+  min-height: 100vh;
 }
 
 .categories img {
@@ -567,19 +570,6 @@ footer img {
 }
 
 @media (max-width: 1050px) {
-  .welcome {
-    background-size: 100%;
-    min-height: 70vh;
-  }
-
-  .welcome-men {
-    min-height: 70vh;
-  }
-
-  .welcome-women {
-    min-height: 70vh;
-  }
-
   .welcome-content {
     position: absolute;
     top: 10px;
@@ -601,14 +591,6 @@ footer img {
   .flex-icons {
     display: flex;
     justify-content: center;
-  }
-
-  .welcome-men {
-    background-size: 100%;
-  }
-
-  .welcome-women {
-    background-size: 100%;
   }
 
   .welcome-men h1 {
@@ -642,14 +624,6 @@ footer img {
   }
 
   .welcome {
-    min-height: 50vh;
-  }
-
-  .welcome-men {
-    min-height: 50vh;
-  }
-
-  .welcome-women {
     min-height: 50vh;
   }
 
@@ -689,19 +663,5 @@ footer img {
   }
   .about-us img {
     width: 300px;
-  }
-}
-
-@media (max-width: 500px) {
-  .welcome {
-    min-height: 30vh;
-  }
-
-  .welcome-men {
-    min-height: 40vh;
-  }
-
-  .welcome-women {
-    min-height: 40vh;
   }
 }
