@@ -197,7 +197,10 @@ header img {
   font-weight: bold;
 }
 
-#size {
+#size-extreme-men,
+#size-extreme-women,
+#size-active-men,
+#size-active-women {
   color: #07275e;
 }
 
@@ -663,5 +666,21 @@ footer img {
   }
   .about-us img {
     width: 300px;
+  }
+}
+
+@media (max-width: 450px) {
+  .product-image {
+    width: 300px;
+    height: 300px;
+  }
+
+  ul {
+    padding-left: 0px;
+  }
+
+  header img {
+    max-width: 200px;
+    height: 100px;
   }
 }
