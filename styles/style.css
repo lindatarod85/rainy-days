@@ -87,10 +87,6 @@ header img {
   margin-bottom: 10px;
 }
 
-.main-nav :nth-child(3) {
-  order: 1;
-}
-
 .main-nav a {
   display: inline-block;
   width: 150px;
@@ -197,13 +193,6 @@ header img {
   font-weight: bold;
 }
 
-#size-extreme-men,
-#size-extreme-women,
-#size-active-men,
-#size-active-women {
-  color: #07275e;
-}
-
 .wrap-2 button,
 .checkout {
   background-color: #ea580e;
@@ -305,6 +294,7 @@ label {
 
 .contact-info p {
   font-weight: bold;
+  max-width: 460px;
 }
 
 .contact-form .button {
@@ -530,11 +520,11 @@ footer img {
     margin-bottom: 0px;
   }
 
-  .main-nav :nth-child(4) {
-    order: 3;
+  .menu {
+    display: none;
   }
 
-  .menu {
+  .main-nav .mobile-view {
     display: none;
   }
 }
@@ -619,6 +609,18 @@ footer img {
     flex-direction: column;
     align-items: center;
   }
+
+  .search {
+    order: 1;
+  }
+
+  .main-nav {
+    background-color: #ea580e;
+    width: 280px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1000;
+  }
 }
 
 @media (max-width: 700px) {
@@ -632,7 +634,7 @@ footer img {
 
   .cart-obtions {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 3fr;
   }
 
   .wrap-1,
@@ -667,6 +669,15 @@ footer img {
   .about-us img {
     width: 300px;
   }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-info {
+    align-items: center;
+  }
 }
 
 @media (max-width: 450px) {
@@ -680,7 +691,13 @@ footer img {
   }
 
   header img {
-    max-width: 200px;
+    max-width: 180px;
+    height: 100px;
+    padding-right: 0px;
+  }
+
+  .product-image-small {
+    width: 100px;
     height: 100px;
   }
 }
