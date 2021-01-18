@@ -762,6 +762,7 @@ footer img {
 
   .order-details {
     grid-template-columns: 1fr;
+    padding-bottom: 20px;
   }
 
   .pay {
