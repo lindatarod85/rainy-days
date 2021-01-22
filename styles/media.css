@@ -150,6 +150,10 @@
   .contact-form .button {
     align-self: center;
   }
+
+  .contact h1 {
+    text-align: center;
+  }
 }
 
 @media (max-width: 700px) {
