@@ -16,6 +16,7 @@
     />
 
     <link href="styles/style.css" rel="stylesheet" />
+    <link href="styles/media.css" rel="stylesheet" />
 
     <link
       rel="stylesheet"
@@ -33,10 +34,6 @@
           </a>
         </div>
         <div>
-          <label for="hamburger-menu" class="hamburger-menu"
-            ><i class="fas fa-bars"></i
-          ></label>
-          <input type="checkbox" id="hamburger-menu" />
           <nav class="sub-nav" aria-label="Sub-navigation">
             <ul>
               <li><i class="fas fa-home"></i><a href="index.html">Home</a></li>
@@ -54,6 +51,9 @@
       <label for="menu" class="menu">Menu</label>
       <input type="checkbox" id="menu" />
       <nav class="main-nav" aria-label="Main">
+        <a href="index.html" class="mobile-view">Home</a>
+        <a href="contact.html" class="mobile-view current">Contact</a>
+        <a href="about.html" class="mobile-view">About</a>
         <a href="men.html">Men's Jackets</a>
         <a href="women.html">Women's Jackets</a>
         <input type="text" class="search" placeholder="Search.." />
@@ -62,9 +62,9 @@
     </header>
 
     <main>
-      <h1>Contact</h1>
       <div class="contact">
-        <section class="contact-form">
+        <h1>Contact</h1>
+        <div class="contact-form">
           <form>
             <label for="name">Your Name:</label>
             <input type="text" id="name" name="name" />
@@ -74,8 +74,8 @@
             <textarea id="message" name="message"></textarea>
             <input type="submit" value="Send" class="button" />
           </form>
-        </section>
-        <section class="contact-info">
+        </div>
+        <div class="contact-info">
           <p>
             Please feel free to contact us if you have any questions, or want to
             give us some feedback.
@@ -84,7 +84,7 @@
           <p><i class="fas fa-phone"></i>555 55 555</p>
           <p><i class="fas fa-envelope"></i>rainydays@mail.com</p>
           <p><i class="fas fa-map-marker-alt"></i>Fictional street</p>
-        </section>
+        </div>
       </div>
     </main>
 
