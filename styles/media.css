@@ -255,8 +255,7 @@
     justify-self: start;
   }
 
-  .cart-obtions a,
-  p {
+  .cart-obtions {
     font-size: 13px;
   }
 
