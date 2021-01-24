@@ -52,7 +52,7 @@ header img {
   color: #2373bc;
 }
 
-.sub-nav a.current {
+a.current {
   text-decoration: underline;
 }
 
