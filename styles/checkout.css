@@ -1,0 +1,39 @@
+.checkout-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  max-width: 895px;
+  margin: auto;
+}
+
+.checkout-details h1 {
+  grid-column: -1/1;
+}
+
+.empty {
+  font-size: 30px;
+}
+
+.continue {
+  color: #2373bc;
+  justify-self: end;
+}
+
+.order-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 895px;
+  margin: auto;
+}
+
+.order-details h4 {
+  grid-column: -1/1;
+}
+
+.cards {
+  margin-bottom: 30px;
+}
+
+.pay {
+  justify-self: end;
+}

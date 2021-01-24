@@ -1,0 +1,50 @@
+.contact input,
+textarea {
+  border: 1px solid #07275e;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+textarea {
+  height: 100px;
+}
+
+label {
+  margin-left: 10px;
+  color: #07275e;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  max-width: 895px;
+  margin: auto;
+}
+
+.contact h1 {
+  grid-column: -1/1;
+}
+
+.contact-form > * {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact > * {
+  flex: 1;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+}
+
+.contact-info p {
+  font-weight: bold;
+  max-width: 460px;
+}
+
+.contact-form .button {
+  margin-top: 10px;
+}

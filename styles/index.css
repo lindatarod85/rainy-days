@@ -1,0 +1,19 @@
+.welcome {
+  background-image: url("../images/rainy-days-frontpage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-position: center center;
+  position: relative;
+}
+
+.welcome-content {
+  position: absolute;
+  top: 100px;
+  left: 200px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}

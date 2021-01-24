@@ -1,0 +1,17 @@
+.about-us {
+  display: grid;
+  grid-template-columns: auto auto;
+  max-width: 895px;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.about-us h1 {
+  grid-column: -1/1;
+}
+
+.about-us img {
+  width: 400px;
+  height: auto;
+}
