@@ -19,6 +19,42 @@
 </head>
 
 <body>
+  <header>
+    <div class="top">
+      <div>
+        <a href="index.html">
+          <img src="images/RainyDays_Logo.png" alt="Logo for Rainy Days" />
+        </a>
+      </div>
+      <div>
+        <nav class="sub-nav" aria-label="Sub-navigation">
+          <ul>
+            <li>
+              <i class="fas fa-home"></i><a href="index.html">Home</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i><a href="contact.html">Contact</a>
+            </li>
+            <li>
+              <i class="fas fa-info-circle"></i><a href="about.html">About</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <label for="menu" class="menu" tabindex="0">Menu</label>
+    <input type="checkbox" id="menu" />
+    <nav class="main-nav" aria-label="Main">
+      <a href="index.html" class="mobile-view">Home</a>
+      <a href="contact.html" class="mobile-view">Contact</a>
+      <a href="about.html" class="mobile-view">About</a>
+      <a href="men.html">Men's Jackets</a>
+      <a href="women.html">Women's Jackets</a>
+      <input type="text" class="search" placeholder="Search.." />
+      <a href="cart.html" class="active"><i class="fas fa-shopping-cart"></i>View Cart</a>
+    </nav>
+  </header>
+  
   <div class="cart-details">
     <h1>Cart</h1>
     <p class=>Items in cart</p>
@@ -46,7 +82,33 @@
     <p>Proceed to<i class="fas fa-arrow-right"></i></p>
     <button class="checkout" onClick="window.location.href='checkout.html'">Checkout</a></button>
   </div>
-</body>
-</body>
 
+  <footer>
+    <div class="location">
+      <p>Where to find us</p>
+      <img src="images/map.jpg" alt="Location of Rainy Days" />
+    </div>
+
+    <div class="contact-details">
+      <p class="contact-visit">Contact & Visit</p>
+      <div>
+        <p><i class="fas fa-phone"></i>555 55 555</p>
+      </div>
+      <div>
+        <p><i class="fas fa-envelope"></i>rainydays@mail.com</p>
+      </div>
+      <div>
+        <p><i class="fas fa-map-marker-alt"></i>Fictional street</p>
+      </div>
+    </div>
+
+    <div class="follow">
+      <p>Follow us on social media</p>
+      <div class="flex-icons">
+        <i class="fab fa-facebook-square fa-3x"></i>
+        <i class="fab fa-instagram fa-3x"></i>
+        <i class="fab fa-linkedin fa-3x"></i>
+      </div>
+    </div>
+  </body>
 </html>

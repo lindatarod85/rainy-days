@@ -85,11 +85,11 @@ a.current {
 }
 
 .main-nav a:hover {
-  background-color: #2373bc;
+  background-color: #1363ac;
 }
 
 .active:visited {
-  background-color: #2373bc;
+  background-color: #1363ac;
 }
 
 .main-nav .search {
@@ -112,6 +112,7 @@ a.current {
   font-weight: bold;
   color: #07275e;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 #menu:checked ~ .main-nav {
@@ -134,7 +135,17 @@ a.current {
   font-size: 12px;
 }
 .button:hover {
-  background-color: #2373bc;
+  background-color: #1363ac;
+}
+
+.checkout:hover {
+  cursor: pointer;
+  background-color: #1363ac;
+}
+
+.add:hover {
+  cursor: pointer;
+  background-color: #1363ac;
 }
 /*Button style*/
 
@@ -152,7 +163,7 @@ a.current {
 
 .wrap-2 button,
 .checkout {
-  background-color: #ea580e;
+  background-color: #c4321c;
   color: #fff;
   display: inline-block;
   width: 125px;
@@ -210,6 +221,11 @@ button a {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #07275e;
+}
+
+select {
+  color: #c4321c;
 }
 /*Sections*/
 
@@ -297,7 +313,7 @@ footer {
 }
 
 footer {
-  background-color: #6e8bad;
+  background-color: #6e8badcc;
   padding: 0px 10px 0px 10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
