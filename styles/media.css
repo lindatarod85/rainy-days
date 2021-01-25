@@ -25,6 +25,10 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  .grid-container h2 {
+    text-align: center;
+  }
+
   .categories {
     display: none;
   }
