@@ -1,4 +1,4 @@
-@media (min-width: 1000px) {
+@media (min-width: 1001px) {
   .main-nav {
     background-color: #ea580e;
     padding: 10px;
@@ -51,7 +51,7 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1001px) {
   .sub-nav {
     display: none;
   }
