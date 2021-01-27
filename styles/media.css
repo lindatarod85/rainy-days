@@ -1,6 +1,5 @@
 @media (min-width: 1001px) {
   .main-nav {
-    background-color: #ea580e;
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -45,7 +44,6 @@
 
 @media (max-width: 1050px) {
   .welcome-content {
-    position: absolute;
     top: 10px;
     left: 10px;
   }
@@ -58,6 +56,10 @@
 @media (max-width: 1001px) {
   .top {
     justify-content: center;
+  }
+
+  .top h1 {
+      display: none;
   }
 
   .sub-nav {
@@ -113,12 +115,16 @@
   }
 
   .main-nav {
-    background-color: #ea580e;
     width: 200px;
     padding: 10px;
     margin-left: 10px;
     position: absolute;
     z-index: 1000;
+    display: none;
+  }
+
+  .main-nav a {
+    margin-bottom: 10px;
   }
 
   .main-nav .search {
@@ -129,7 +135,7 @@
   .cart-details,
   .order-details,
   .items-in-cart,
-  .cart-obtions {
+  .cart-options {
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -213,12 +219,12 @@
     justify-self: start;
   }
 
-  .cart-obtions {
+  .cart-options {
     display: grid;
     grid-template-columns: 3fr 4fr;
   }
 
-  .cart-obtions a {
+  .cart-options a {
     margin-left: 0px;
     margin-right: 0px;
   }
@@ -258,7 +264,7 @@
     justify-self: start;
   }
 
-  .cart-obtions {
+  .cart-options {
     font-size: 13px;
   }
 

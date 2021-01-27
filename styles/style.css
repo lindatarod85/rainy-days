@@ -64,10 +64,7 @@ a.current {
 .main-nav {
   display: flex;
   flex-direction: column;
-}
-
-.main-nav > a {
-  margin-bottom: 10px;
+  background-color: #ea580e;
 }
 
 .main-nav a {
@@ -97,10 +94,6 @@ a.current {
   border-radius: 50px;
   border: none;
   text-align: center;
-}
-
-.main-nav {
-  display: none;
 }
 
 #menu {
