@@ -13,6 +13,10 @@
   left: 200px;
 }
 
+.welcome-content h1 {
+  font-size: 48px;
+}
+
 .button-container {
   display: flex;
   justify-content: space-between;

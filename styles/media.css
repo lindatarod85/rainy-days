@@ -48,7 +48,7 @@
     left: 10px;
   }
 
-  .welcome-content h2 {
+  .welcome-content h1 {
     font-size: 40px;
   }
 }
@@ -110,10 +110,6 @@
     text-align: center;
   }
 
-  .search {
-    order: 1;
-  }
-
   .main-nav {
     width: 200px;
     padding: 10px;
@@ -129,6 +125,9 @@
 
   .main-nav .search {
     padding: 14px;
+    order: 1;
+    width: 100%;
+    margin-bottom: 10px;
   }
 
   .checkout-details,
@@ -190,7 +189,7 @@
 }
 
 @media (max-width: 650px) {
-  .welcome-content h2 {
+  .welcome-content h1 {
     font-size: 26px;
   }
 
