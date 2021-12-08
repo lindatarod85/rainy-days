@@ -1,6 +1,6 @@
 .product-image-large {
-  width: 600px;
-  height: 600px;
+  width: 400px;
+  height: 400px;
   object-fit: cover;
 }
 
@@ -24,4 +24,32 @@
 
 .product-details p {
   font-size: 24px;
+}
+
+.thumbnail {
+  width: 120px;
+  height: 120px;
+  display: block;
+  object-fit: cover;
+}
+
+.thumbnail_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.backward-icon {
+  color: #07275e;
+  position: absolute;
+  padding-left: 10px;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.forward-icon {
+  position: absolute;
+  color: #07275e;
+  padding-top: 10px;
+  margin-left: -40px;
+  cursor: pointer;
 }

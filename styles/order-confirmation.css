@@ -1,0 +1,27 @@
+.confirmation-container {
+  width: 800px;
+  height: 500px;
+  background-color: white;
+  margin: auto auto;
+}
+
+.confirmation-message {
+  text-align: center;
+}
+
+.go-home {
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  border-color: #07275e;
+  padding: 20px 24px;
+  background-color: #c4321c;
+  font-weight: bold;
+  font-size: 12px;
+}
+.button:hover {
+  background-color: #1363ac;
+}

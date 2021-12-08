@@ -17,6 +17,12 @@
 .continue {
   color: #1363ac;
   justify-self: end;
+  text-decoration: underline solid 2px;
+  text-underline-position: under;
+}
+
+.continue:hover {
+  text-decoration: none;
 }
 
 .order-details {

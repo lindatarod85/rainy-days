@@ -53,7 +53,8 @@ header img {
 }
 
 a.current {
-  text-decoration: underline;
+  text-decoration: underline solid 2px;
+  text-underline-position: under;
 }
 
 .top {
@@ -83,10 +84,16 @@ a.current {
 
 .main-nav a:hover {
   background-color: #1363ac;
+  transition: ease-in-out 0.5s;
 }
 
 .active:visited {
   background-color: #1363ac;
+}
+
+a.active {
+  text-decoration: solid 2px underline;
+  text-underline-position: under;
 }
 
 .main-nav .search {
@@ -97,14 +104,14 @@ a.current {
 }
 
 .sr-only {
-border: 0;
-clip: rect(0,0,0,0);
-height: 1px;
-margin: -1px;
-overflow: hidden;
-padding: 0;
-position: absolute;
-width: 1px;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 .hide {
@@ -138,19 +145,24 @@ width: 1px;
   font-weight: bold;
   font-size: 12px;
 }
+
 .button:hover {
   background-color: #1363ac;
+  transition: 0.5s;
 }
 
 .checkout:hover {
   cursor: pointer;
   background-color: #1363ac;
+  transition: 0.5s;
 }
 
 .add:hover {
   cursor: pointer;
   background-color: #1363ac;
+  transition: 0.5s;
 }
+
 /*Button style*/
 
 /*Sections*/
@@ -158,6 +170,10 @@ width: 1px;
   object-fit: cover;
   width: 400px;
   height: 400px;
+}
+
+.product-image:hover {
+  opacity: 0.8;
 }
 
 .price {
@@ -170,7 +186,7 @@ width: 1px;
   background-color: #c4321c;
   color: #fff;
   display: inline-block;
-  width: 125px;
+  width: 135px;
   padding: 14px 24px;
   border-radius: 50px;
   border-style: none;
