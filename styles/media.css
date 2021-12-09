@@ -85,6 +85,10 @@
   .fa-search {
     display: none !important;
   }
+
+  .top {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 1050px) {
@@ -99,10 +103,6 @@
 }
 
 @media (max-width: 1001px) {
-  .top {
-    justify-content: center;
-  }
-
   .top h1 {
     display: none;
   }
