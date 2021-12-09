@@ -204,7 +204,7 @@ button a {
   margin-right: 10px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  column-gap: 15px;
+  gap: 15px;
 }
 
 .wrap-1 {
