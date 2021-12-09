@@ -204,7 +204,12 @@ button a {
   margin-right: 10px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
+  column-gap: 15px;
+}
+
+.grid-container-women,
+.grid-container-men {
+  row-gap: 30px;
 }
 
 .wrap-1 {

@@ -215,6 +215,11 @@
     grid-template-columns: 1fr;
   }
 
+  .grid-container-women,
+  .grid-container-men {
+    row-gap: 0px;
+  }
+
   .welcome {
     min-height: 50vh;
   }
