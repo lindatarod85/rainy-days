@@ -139,7 +139,7 @@ a.active {
   color: #fff;
   text-decoration: none;
   border-radius: 50px;
-  border-color: #07275e;
+  border: none;
   padding: 14px 24px;
   background-color: #07275e;
   font-weight: bold;
@@ -149,6 +149,7 @@ a.active {
 .button:hover {
   background-color: #1363ac;
   transition: 0.5s;
+  border: none;
 }
 
 .checkout:hover {

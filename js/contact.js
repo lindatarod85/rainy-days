@@ -1,16 +1,3 @@
-/*Add to cart */
-
-const selectButton = document.querySelectorAll(".add");
-
-for (i = 0; i < selectButton.length; i++) {
-  selectButton[i].addEventListener("click", function () {
-    event.target.innerHTML = `<i class="fa fa-check" aria-hidden="true"></i> Item added`;
-    event.target.style.backgroundColor = "green";
-  });
-}
-
-/*Contact form validation */
-
 const form = document.querySelector("#contactForm");
 const fullName = document.querySelector("#fullName");
 const fullNameError = document.querySelector("#fullNameError");
@@ -90,11 +77,3 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /*Product image gallery*/
-
-const forwardIcon = document.querySelector(".forward-icon");
-
-forwardIcon.addEventListener("click", swapImage);
-
-function swapImage() {
-  document.querySelector(".product-image-large").src = "images/closeup1.png";
-}

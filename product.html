@@ -77,6 +77,7 @@
         <a href="women.html">Women's Jackets</a>
         <div>
           <label class="sr-only" for="search-field">Search</label>
+          <i class="fa fa-search fa-lg" aria-hidden="true"></i>
           <input
             id="search-field"
             class="search"
@@ -86,32 +87,40 @@
           />
         </div>
         <a href="cart.html"><i class="fas fa-shopping-cart"></i>View Cart</a>
+        <a href="checkout.html">Checkout</a>
       </nav>
     </header>
 
     <section class="product-details">
       <h1>Jacket Extreme Men's</h1>
       <div>
-        <i class="fa fa-arrow-left backward-icon fa-2x" aria-hidden="true"></i>
         <img
           src="images/jacket-extreme-men.jpg"
           alt="Product image of Jacket extreme for men"
           class="product-image-large"
         />
-        <i class="fa fa-arrow-right forward-icon fa-2x" aria-hidden="true"></i>
         <div class="thumbnail_container">
           <img
+            src="images/jacket-extreme-men.jpg"
+            onclick="change(this.src)"
+            alt="Product image of Jacket extreme for men"
+            class="thumbnail thum_1"
+          />
+          <img
             src="images/closeup1.png"
+            onclick="change(this.src)"
             alt="Product image of Jacket extreme for men"
             class="thumbnail thum_1"
           />
           <img
             src="images/closeup2.png"
+            onclick="change(this.src)"
             alt="Product image of Jacket extreme for men"
             class="thumbnail thum_2"
           />
           <img
             src="images/closeup3.png"
+            onclick="change(this.src)"
             alt="Product image of Jacket extreme for men"
             class="thumbnail thum_3"
           />
@@ -167,6 +176,7 @@
         </div>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="js/addToCart.js"></script>
+    <script src="js/product.js"></script>
   </body>
 </html>
