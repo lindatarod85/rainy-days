@@ -171,10 +171,14 @@ a.active {
   object-fit: cover;
   width: 400px;
   height: 400px;
+  transition: 0.2s;
 }
 
 .product-image:hover {
   opacity: 0.8;
+  -ms-transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  transform: scale(1.05);
 }
 
 .price {
