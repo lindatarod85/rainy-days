@@ -276,6 +276,12 @@ select {
   font-size: 24px;
 }
 
+.currently-empty {
+  color: #07275e;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
 .cart-details {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -286,6 +292,7 @@ select {
 
 .cart-details h1 {
   grid-column: -1/1;
+  margin-bottom: 0px;
 }
 
 .cart-details p:nth-of-type(2) {
@@ -303,6 +310,31 @@ select {
 .cart-details p:nth-of-type(8) {
   justify-self: end;
 }
+
+.cart-details p:nth-of-type(10) {
+  justify-self: end;
+}
+
+.cart-details p:nth-of-type(12) {
+  justify-self: end;
+}
+
+.cart-details p:nth-of-type(14) {
+  justify-self: end;
+}
+
+.cart-details p:nth-of-type(16) {
+  justify-self: end;
+}
+
+.cart-details p:nth-of-type(18) {
+  justify-self: end;
+}
+
+.cart-details p:nth-of-type(20) {
+  justify-self: end;
+}
+
 /*Cart & Checkout*/
 
 /*Icons*/

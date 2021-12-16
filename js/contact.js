@@ -59,21 +59,6 @@ function showSuccessMessage() {
     validateEmail(email.value) === true
   ) {
     document.querySelector(".success-message").style.display = "block";
+    document.querySelector("#contactForm").reset();
   }
 }
-
-/*Reset inputs */
-
-document.addEventListener("DOMContentLoaded", function () {
-  document.querySelector("#fullName").value = "";
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  document.querySelector("#message").value = "";
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  document.querySelector("#email").value = "";
-});
-
-/*Product image gallery*/

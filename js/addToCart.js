@@ -1,3 +1,5 @@
+/*Animation of item added */
+
 const selectButton = document.querySelectorAll(".add");
 
 for (i = 0; i < selectButton.length; i++) {
