@@ -286,6 +286,13 @@
     width: 300px;
     height: 400px;
   }
+
+  .confirmation-message {
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
   .confirmation-message h1,
   h2,
   h3 {
