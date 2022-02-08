@@ -21,9 +21,9 @@ function createHTML(jacketList){
         jacketListContainer.innerHTML += `<div class="jacket">
 <img src="${jacket.images[0].src}" alt="${jacket.name}">
 <h2>${jacket.name}</h2>
-<p><span>Categories:</span> ${jacket.categories[1].name}</p>, 
+<p><span>Categories </span> ${jacket.categories[1].name}</p>, 
 <p>${jacket.categories[0].name}</p>
-<h4><span>Price: </span>${jacket.prices.price},-</h4>
+<h4><span>Price </span>${jacket.prices.price},-</h4>
         </div>`;
         console.log(jacket);
     });
