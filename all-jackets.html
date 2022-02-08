@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainy days | all jackets</title>
+    <link href="styles/style.css" rel="stylesheet" />
+    <link href="styles/all-jackets.css" rel="stylesheet" />
+    <link href="styles/media.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="top">
+          <div>
+            <a href="index.html">
+              <img src="images/RainyDays_Logo.png" alt="Logo for Rainy Days" />
+            </a>
+          </div>
+          <div>
+            <nav class="sub-nav" aria-label="Sub-navigation">
+              <ul>
+                <li>
+                  <i class="fas fa-home"></i
+                  ><a href="index.html">Home</a>
+                </li>
+                <li>
+                  <i class="fas fa-envelope"></i
+                  ><a href="contact.html">Contact</a>
+                </li>
+                <li>
+                  <i class="fas fa-info-circle"></i><a href="about.html">About</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <label for="menu" class="menu" tabindex="0"
+          ><i class="fa fa-bars" aria-hidden="true"></i> Menu</label
+        >
+        <input type="checkbox" id="menu" class="hide" />
+        <nav class="main-nav" aria-label="Main">
+          <a href="index.html" class="mobile-view">Home</a>
+          <a href="contact.html" class="mobile-view">Contact</a>
+          <a href="about.html" class="mobile-view">About</a>
+          <a href="men.html">Men's Jackets</a>
+          <a href="women.html">Women's Jackets</a>
+          <div>
+            <label class="sr-only" for="search-field">Search</label>
+            <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+            <input
+              id="search-field"
+              class="search"
+              type="search"
+              name="search-field"
+              placeholder="Search.."
+            />
+          </div>
+          <a href="cart.html"><i class="fas fa-shopping-cart"></i>View Cart</a>
+          <a href="checkout.html">Checkout</a>
+        </nav>
+      </header>
+      <main>
+          <section class="list-of-jackets">
+
+          </section>
+      </main>
+      <script src="js/all-jackets.js"></script>
+</body>
+</html>
