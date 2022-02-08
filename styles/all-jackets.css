@@ -12,3 +12,21 @@
     gap: 60px;
     margin-top: 60px;
 }
+
+.jacket h2 {
+    margin: auto;
+}
+
+.jacket p {
+    display: inline;
+}
+
+.jacket span{
+    font-weight: bold;
+}
+
+.jacket h4{
+    margin: auto;
+    font-size: 24px;
+}
+
