@@ -18,13 +18,14 @@ getJackets();
 
 function createHTML(jacketList){
     jacketList.forEach(function(jacket){
-        jacketListContainer.innerHTML += `<div class="jacket">
+        jacketListContainer.innerHTML += `<a href="single-jacket.html?id=${jacket.id}"><div class="jacket">
 <img src="${jacket.images[0].src}" alt="${jacket.name}">
 <h2>${jacket.name}</h2>
 <p><span>Categories </span> ${jacket.categories[1].name}</p>, 
 <p>${jacket.categories[0].name}</p>
 <h4><span>Price </span>${jacket.prices.price},-</h4>
-        </div>`;
+        </div>
+        </a>`;
         console.log(jacket);
     });
 
