@@ -32,6 +32,13 @@ fetchJacket();
 function createHTML(results){
     singleJacketContainer.innerHTML +=`<div class="jacket-container">
     <h1>${results.name}</h1>
+    <p><span>Categories ${results.categories[1].name}</span></p>
+    <p><span>${results.categories[0].name}</span></p>
+    <p><span>About the jacket ${results.short_description}</span></p>
+    <p><span>Choose size ${results.attributes[0]}</span></p>
+    <p><span>${results.terms[0]}</span></p>
+    <p><span>Price ${results.price}</span></p>
+
     
     </div>`
 }
