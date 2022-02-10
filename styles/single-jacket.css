@@ -1,0 +1,55 @@
+
+
+.jacket-container {
+    display: grid;
+    grid-template-columns: 600px 500px;;
+    justify-content: center;
+}
+
+.jacket-image-container {
+    grid-column: 1;
+}
+
+.jacket-image-container img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.thumbnails img {
+    width: 122px;
+    height: 122px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.jacket-categories {
+    font-size: 16px;
+}
+
+.jacket-categories span {
+    font-weight: bold;
+}
+
+p {
+    font-size: 24px;
+}
+
+p .size-attribute {
+    margin-top: 20px;
+}
+
+.jacket-info label {
+    color: #07275e;
+    font-size: 20px;
+}
+
+.jacket-price span {
+    font-weight: bold;
+}
+
+select {
+    font-size: 18px;
+}
+
+
