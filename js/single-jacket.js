@@ -51,7 +51,7 @@ function createHTML(results){
 
     <p class="short-description">${results.short_description}</p>
 
-    <label for="select-options">${results.add_to_cart.text}</label>
+    <label for="select-options">${results.attributes[0].name}</label>
           <select name="select-options" id="select-options ">
             <option value="S">${results.variations[0].attributes[0].value}</option>
             <option value="M">${results.variations[1].attributes[0].value}</option>
