@@ -60,6 +60,8 @@ function createHTML(results){
    
     <p class="jacket-price"><span>Price:</span> ${results.prices.price},- ${results.prices.currency_code}</p>
 
+    <button class="add">Add to Cart</button>
+
     
 
     
