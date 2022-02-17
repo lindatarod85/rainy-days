@@ -74,8 +74,8 @@ const change = (src) => {
 
 function addToCart(results) {
   document.querySelector(".add").addEventListener("click", function(){
-    localStorage.setItem("jacket", JSON.stringify(results.name));
-    localStorage.setItem("price", JSON.stringify(results.prices.price));
+    localStorage.setItem("jacket", (results.name));
+    localStorage.setItem("price", (results.prices.price));
   });
 }
 
