@@ -156,3 +156,4 @@ document.querySelector(".empty-cart").addEventListener(
   },
   false
 );
+

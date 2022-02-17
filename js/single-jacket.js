@@ -6,31 +6,26 @@ const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
 
-console.log(id);
-
-const url = "https://novadev.one/rainy-days-headless/wp-json/wc/store/products/" + id;
-
+const url =
+  "https://novadev.one/rainy-days-headless/wp-json/wc/store/products/" + id;
 
 console.log(url);
 
-async function fetchJacket(){
-    try{
-const response = await fetch(url);
-const results = await response.json();
+async function fetchJacket() {
+  try {
+    const response = await fetch(url);
+    const results = await response.json();
 
-console.log(results);
-
-createHTML(results);
-    }
-    catch(error){
-        console.log(error);
-    }
+    createHTML(results);
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 fetchJacket();
 
-function createHTML(results){
-    singleJacketContainer.innerHTML +=`<div class="jacket-container">
+function createHTML(results) {
+  singleJacketContainer.innerHTML += `<div class="jacket-container">
     
     <h1>${results.name}</h1>
     <div class="jacket-image-container">
@@ -59,20 +54,30 @@ function createHTML(results){
           </select>
    
     <p class="jacket-price"><span>Price:</span> ${results.prices.price},- ${results.prices.currency_code}</p>
+ 
+<button class="add" onclick="myFunction()">Add to Cart</button>
 
-    <button class="add">Add to Cart</button>
-
-    
-
-    
  </div>
  
  </div>
- `
+ `;
 }
 
 /*Image thumbnail gallery function */
 
 const change = (src) => {
-    document.querySelector(".main-image").src = src;
-  };
+  document.querySelector(".main-image").src = src;
+};
+
+/*Add to cart*/
+
+function myFunction() {
+  document.querySelector(".add").innerHTML = `<i class="fa fa-check" aria-hidden="true"></i> Item added`;
+  document.querySelector(".add").style.backgroundColor = "green";
+}
+
+
+
+
+
+

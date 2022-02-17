@@ -52,14 +52,14 @@ select {
     font-size: 18px;
 }
 
-.jacket-container .add {
+.single-jacket .add {
     background-color: #c4321c;
-  color: #fff;
-  display: inline-block;
-  width: 135px;
-  padding: 14px 24px;
-  border-radius: 50px;
-  border-style: none;
+    color: #fff;
+    display: inline-block;
+    width: 145px;
+    padding: 14px 24px;
+    border-radius: 50px;
+    border-style: none;
 }
 
 
