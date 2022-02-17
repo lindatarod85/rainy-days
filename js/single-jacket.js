@@ -17,6 +17,7 @@ async function fetchJacket() {
     const results = await response.json();
 
     createHTML(results);
+    addToCart(results);
   } catch (error) {
     console.log(error);
   }
@@ -55,7 +56,7 @@ function createHTML(results) {
    
     <p class="jacket-price"><span>Price:</span> ${results.prices.price},- ${results.prices.currency_code}</p>
  
-<button class="add" onclick="myFunction()">Add to Cart</button>
+<button class="add" onclick = clickAnimation()>Add to Cart</button>
 
  </div>
  
@@ -71,10 +72,22 @@ const change = (src) => {
 
 /*Add to cart*/
 
-function myFunction() {
+function addToCart(results) {
+  document.querySelector(".add").addEventListener("click", function(){
+    localStorage.setItem("jacket", JSON.stringify(results.name));
+    localStorage.setItem("price", JSON.stringify(results.prices.price));
+  });
+}
+
+/*Add to cart button onclick animation */
+
+function clickAnimation(){
   document.querySelector(".add").innerHTML = `<i class="fa fa-check" aria-hidden="true"></i> Item added`;
   document.querySelector(".add").style.backgroundColor = "green";
 }
+
+
+
 
 
 
