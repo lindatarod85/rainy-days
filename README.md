@@ -1,6 +1,6 @@
 # Rainy Days
 
-![image](https://rainy-days-frontpage.jpg)
+![image](https://github.com/lindatarod85/rainy-days/blob/main/images/rainy-days-frontpage.jpg)
 
 An online webstore that sells jackets for all-weather outdoor-activities
 
