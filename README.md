@@ -1,6 +1,6 @@
 # Rainy Days
 
-![image](rainy-days-frontpage.jpg)
+![image](https://rainy-days-frontpage.jpg)
 
 An online webstore that sells jackets for all-weather outdoor-activities
 
