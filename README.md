@@ -8,7 +8,7 @@ An online webstore that sells jackets for all-weather outdoor-activities
 
 The website contains a sortiment of jackets that are tailored for outdoor activities and expeditions, for both men and women.
 
-It sets out to:
+The website sets out to:
 
 - Sell jackets
 - Promote jackets
